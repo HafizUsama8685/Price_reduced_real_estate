@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="30dp"
+    android:background="@color/colorPrimary">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_toRightOf="@id/imageView">
+
+            <TextView
+                android:id="@+id/tvDrawerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name Here"
+                android:textColor="@android:color/white"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvDrawerEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvDrawerName"
+                android:text="abcdef12345@gmail.com"
+                android:textColor="@android:color/white"
+                android:textSize="12dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

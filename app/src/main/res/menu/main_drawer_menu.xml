@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="nav_view">
+
+    <group android:checkableBehavior="single">
+<!--        <item android:title="Prefs">-->
+<!--            <menu>-->
+<!--                <group android:checkableBehavior="single">-->
+<!--                    <item android:title="My Prefs"/>-->
+<!--                </group>-->
+<!--            </menu>-->
+<!--        </item>-->
+        <item
+            android:id="@+id/nav_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_profile"
+            android:title="Profile" />
+        <item
+            android:id="@+id/nav_myProperties"
+            android:title="My Properties" />
+        <item
+            android:id="@+id/nav_userGuide"
+            android:title="User Guide" />
+        <item
+            android:id="@+id/nav_contactUs"
+            android:title="Contact Us" />
+        <item
+            android:id="@+id/nav_aboutUs"
+            android:title="About Us" />
+        <item
+            android:id="@+id/nav_shareApp"
+            android:title="Share App" />
+        <item
+            android:id="@+id/nav_logout"
+            android:title="Logout" />
+    </group>
+</menu>

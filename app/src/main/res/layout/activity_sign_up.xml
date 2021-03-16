@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.SignUpActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5">
+
+        <ProgressBar
+            android:id="@+id/signUpProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvSignUpTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="Please Enter Your Credentials!"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilSignUpFName"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvSignUpTitle"
+                    android:layout_marginTop="20dp"
+                    android:hint="First Name">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtSignUpFName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:imeOptions="actionNext"
+                        android:singleLine="true"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilSignUpLName"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tilSignUpFName"
+                    android:layout_marginTop="5dp"
+                    android:hint="Last Name">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtSignUpLName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:imeOptions="actionNext"
+                        android:singleLine="true"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilSignUpPhone"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tilSignUpLName"
+                    android:layout_marginTop="5dp"
+                    android:hint="Phone Number">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtSignUpPhoneNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:imeOptions="actionNext"
+                        android:inputType="phone"
+                        android:singleLine="true"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilSignUpEmail"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tilSignUpPhone"
+                    android:layout_marginTop="5dp"
+                    android:hint="Email">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtSignUpEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:imeOptions="actionNext"
+                        android:singleLine="true"
+                        android:inputType="textEmailAddress"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilSignUpPassword"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tilSignUpEmail"
+                    android:layout_marginTop="5dp"
+                    app:passwordToggleEnabled="true"
+                    android:hint="Password">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtSignUpPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:imeOptions="actionNext"
+                        android:singleLine="true"
+                        android:inputType="textPassword"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilSignUpConfirmPassword"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tilSignUpPassword"
+                    android:layout_marginTop="5dp"
+                    app:passwordToggleEnabled="true"
+                    android:hint="Confirm Password">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtSignUpConfirmPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:imeOptions="actionDone"
+                        android:singleLine="true"
+                        android:inputType="textPassword"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnSignUp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tilSignUpConfirmPassword"
+                    android:text="SignUp"
+                    android:textAllCaps="false"
+                    android:padding="10dp"
+                    android:textSize="18sp"
+                    android:elevation="1.5dp"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+                <TextView
+                    android:id="@+id/tvSignIn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/btnSignUp"
+                    android:layout_marginTop="15dp"
+                    android:layout_centerHorizontal="true"
+                    android:text="Already have an account? Sign In"/>
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

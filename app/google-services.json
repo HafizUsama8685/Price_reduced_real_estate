@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "821845372252",
+    "project_id": "price-reduced-real-estate",
+    "storage_bucket": "price-reduced-real-estate.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:821845372252:android:c2d0d09ceb9e48d36e2599",
+        "android_client_info": {
+          "package_name": "com.hutechnologies.pricereducedrealestate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "821845372252-366eh5qtkog5cc8m5j0t318hsbfte1ad.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMbTJW5Mz2ulUUWSf8o0LH5gMxaVX7Qqg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "821845372252-366eh5qtkog5cc8m5j0t318hsbfte1ad.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
